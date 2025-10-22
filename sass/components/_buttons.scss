@@ -1,1 +1,13 @@
-@use '../abstracts/index' as abs;
+@use '../abstracts/index' as *;
+@use 'sass:color';
+
+.button-1 {
+  @include button();
+}
+.footer__submit {
+  background-color: $black;
+  border: none;
+  @include button();
+}
+
+

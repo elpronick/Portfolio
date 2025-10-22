@@ -4,30 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sass/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <title>Portfolio</title>
 </head>
-<body class="page">
-  <nav class="nav">
-    <img src="img/adamkeyes.svg" alt="Logo" class="nav__logo">
-    <div class="nav__social">
-      <img src="img/logo-github.svg" alt="Logo de GitHub" class="nav__social-item">
-      <img src="img/logo-devianart.svg" alt="Logo de DeviantArt" class="nav__social-item">
-      <img src="img/logo-linkedin.svg" alt="Logo de LinkedIn" class="nav__social-item">
-      <img src="img/logo-x.svg" alt="Logo de X" class="nav__social-item">
-    </div>
-    <img src="img/perfil.png" alt="Imagen de perfil de Adam Keyes" class="nav__profile">
-  </nav>
-  <main class="main">
-    <header class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Nice to meet you! I’m Adam Keyes.</h1>
-        <p class="hero__description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-        <a href="#" aria-label="Contactar a Adam Keyes" class="hero__cta">CONTACT ME</a>
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <img src="img/adamkeyes.svg" alt="Logo" class="header__nav__logo">
+      <div class="header__nav__social">
+        <img src="img/logo-github.svg" alt="Logo de GitHub" class="header__nav__social-item">
+        <img src="img/logo-devianart.svg" alt="Logo de DeviantArt" class="header__nav__social-item">
+        <img src="img/logo-linkedin.svg" alt="Logo de LinkedIn" class="header__nav__social-item">
+        <img src="img/logo-x.svg" alt="Logo de X" class="header__nav__social-item">
       </div>
-    </header>
+      <img src="img/perfil.png" alt="Imagen de perfil de Adam Keyes" class="header__nav__profile">
+    </nav>
+    <div class="header__content">
+      <h1 class="header__title">Nice to meet you! I’m Adam Keyes.</h1>
+      <p class="header__description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+      <a href="#" aria-label="Contactar a Adam Keyes" class="button-1">CONTACT ME</a>
+    </div>
+  </header>
 
+  <main>
     <section class="skills">
-      <h2 class="skills__title">Skills</h2>
       <ul class="skills__list">
         <li class="skills__item"><h3 class="skills__item-title">HTML</h3><p class="skills__item-experience">4 Years Experience</p></li>
         <li class="skills__item"><h3 class="skills__item-title">CSS</h3><p class="skills__item-experience">4 Years Experience</p></li>
@@ -38,11 +38,12 @@
       </ul>
     </section>
 
-    <section class="projects">
+    <section class="project">
       <div class="project-header">
         <h2 class="project-header__title">Projects</h2>
-        <a href="#" aria-label="Contactar a Adam Keyes" class="project-header__cta">CONTACT ME</a>
+        <a href="#" aria-label="Contactar a Adam Keyes" class="button-1">CONTACT ME</a>
       </div>
+
       <div class="project-list">
         <article class="portfolio-item">
           <img src="img/Bitmap-1.jpg" alt="Design Portfolio project" class="portfolio-item__image">
@@ -51,9 +52,9 @@
             <h4 class="tech-stack__item">HTML</h4>
             <h4 class="tech-stack__item">CSS</h4>
           </div>
-          <div class="project-actions">
-            <a href="#" aria-label="Ver proyecto Design Portfolio" class="project-actions__link">VIEW PROJECT</a>
-            <a href="#" aria-label="Ver código de Design Portfolio" class="project-actions__link">VIEW CODE</a>
+          <div class="portfolio-actions">
+            <a href="#" aria-label="Ver proyecto Design Portfolio" class="button-1">VIEW PROJECT</a>
+            <a href="#" aria-label="Ver código de Design Portfolio" class="button-1">VIEW CODE</a>
           </div>
         </article>
 
@@ -64,9 +65,9 @@
             <h4 class="tech-stack__item">HTML</h4>
             <h4 class="tech-stack__item">CSS</h4>
           </div>
-          <div class="project-actions">
-            <a href="#" aria-label="Ver proyecto E-Learning Landing Page" class="project-actions__link">VIEW PROJECT</a>
-            <a href="#" aria-label="Ver código de E-Learning Landing Page" class="project-actions__link">VIEW CODE</a>
+          <div class="portfolio-actions">
+            <a href="#" aria-label="Ver proyecto Design Portfolio" class="button-1">VIEW PROJECT</a>
+            <a href="#" aria-label="Ver código de Design Portfolio" class="button-1">VIEW CODE</a>
           </div>
         </article>
 
@@ -78,9 +79,9 @@
             <h4 class="tech-stack__item">CSS</h4>
             <h4 class="tech-stack__item">JAVASCRIPT</h4>
           </div>
-          <div class="project-actions">
-            <a href="#" aria-label="Ver proyecto Todo Web App" class="project-actions__link">VIEW PROJECT</a>
-            <a href="#" aria-label="Ver código de Todo Web App" class="project-actions__link">VIEW CODE</a>
+          <div class="portfolio-actions">
+            <a href="#" aria-label="Ver proyecto Design Portfolio" class="button-1">VIEW PROJECT</a>
+            <a href="#" aria-label="Ver código de Design Portfolio" class="button-1">VIEW CODE</a>
           </div>
         </article>
 
@@ -92,9 +93,9 @@
             <h4 class="tech-stack__item">CSS</h4>
             <h4 class="tech-stack__item">JAVASCRIPT</h4>
           </div>
-          <div class="project-actions">
-            <a href="#" aria-label="Ver proyecto Entertainment Web App" class="project-actions__link">VIEW PROJECT</a>
-            <a href="#" aria-label="Ver código de Entertainment Web App" class="project-actions__link">VIEW CODE</a>
+          <div class="portfolio-actions">
+            <a href="#" aria-label="Ver proyecto Design Portfolio" class="button-1">VIEW PROJECT</a>
+            <a href="#" aria-label="Ver código de Design Portfolio" class="button-1">VIEW CODE</a>
           </div>
         </article>
 
@@ -106,9 +107,9 @@
             <h4 class="tech-stack__item">CSS</h4>
             <h4 class="tech-stack__item">JAVASCRIPT</h4>
           </div>
-          <div class="project-actions">
-            <a href="#" aria-label="Ver proyecto Memory Game" class="project-actions__link">VIEW PROJECT</a>
-            <a href="#" aria-label="Ver código de Memory Game" class="project-actions__link">VIEW CODE</a>
+          <div class="portfolio-actions">
+            <a href="#" aria-label="Ver proyecto Design Portfolio" class="button-1">VIEW PROJECT</a>
+            <a href="#" aria-label="Ver código de Design Portfolio" class="button-1">VIEW CODE</a>
           </div>
         </article>
 
@@ -120,9 +121,9 @@
             <h4 class="tech-stack__item">CSS</h4>
             <h4 class="tech-stack__item">JAVASCRIPT</h4>
           </div>
-          <div class="project-actions">
-            <a href="#" aria-label="Ver proyecto Art Gallery Showcase" class="project-actions__link">VIEW PROJECT</a>
-            <a href="#" aria-label="Ver código de Art Gallery Showcase" class="project-actions__link">VIEW CODE</a>
+          <div class="portfolio-actions">
+            <a href="#" aria-label="Ver proyecto Design Portfolio" class="button-1">VIEW PROJECT</a>
+            <a href="#" aria-label="Ver código de Design Portfolio" class="button-1">VIEW CODE</a>
           </div>
         </article>
       </div>
@@ -133,12 +134,11 @@
     <h2 class="footer__title">Contact</h2>
     <p class="footer__description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
     <form class="footer__form">
-      <label for="name" class="footer__label">NAME</label>
-      <input type="text" id="name" name="name" class="footer__input">
-      <label for="email" class="footer__label">EMAIL</label>
-      <input type="email" id="email" name="email" class="footer__input">
-      <label for="message" class="footer__label">MESSAGE</label>
-      <textarea id="message" name="message" class="footer__textarea"></textarea>
+      <div class="form-fields">
+        <input type="text" id="name" name="name" class="footer__input" placeholder="NAME">
+        <input type="email" id="email" name="email" class="footer__input" placeholder="EMAIL">
+        <textarea id="message" name="message" class="footer__textarea" placeholder="MESSAGE"></textarea>
+      </div>
       <button type="submit" aria-label="Enviar mensaje" class="footer__submit">SEND MESSAGE</button>
     </form>
     <nav class="footer__nav">

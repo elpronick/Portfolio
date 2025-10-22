@@ -1,1 +1,95 @@
 @use '../abstracts/index' as abs;
+@use 'sass:color';
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-color: abs.$black; // Fondo consistente
+  
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    width: 100%; // Ocupa todo el contenedor
+  }
+
+  &__item-title {
+    font-size: 2.1em;
+    font-weight: 700;
+  }
+
+  &__item-experience {
+    margin-top: 0;
+    font-size: 1em;
+  }
+}
+
+.project {
+  padding: 0 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+      font-size: 2.2em;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  .project-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
+    justify-content: center;
+
+    .portfolio-item {
+      padding: 20px;
+      text-align: center;
+
+      &__image {
+        width: 343px; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      &__title {
+        font-size: 1.5em;
+        margin: 0 0 8px 0;
+        font-weight: 700;
+        text-align: start;
+      }
+
+      .tech-stack {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        margin-bottom: 20px;
+
+        &__item {
+          font-size: 1em;
+          padding: 5px 0;
+        }
+      }
+
+      .portfolio-actions {
+        display: flex;
+        gap: 25px;
+        justify-content: start;
+      }
+    }
+  }
+}

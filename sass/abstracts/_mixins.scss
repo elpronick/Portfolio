@@ -28,3 +28,36 @@
 }
 
 // MIXINS--------------------
+// Mixin para botón tipo "CONTACT ME"
+@mixin button($color: $ligth-green, $font-size: 0.9rem, $underline-width: 100%, $underline-height: 2px) {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: $font-size;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%);
+    width: $underline-width;
+    height: $underline-height;
+    background-color: $color;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+
+  &:hover {
+    color: $color;
+
+    &::after {
+      width: 120%;
+    }
+  }
+}
