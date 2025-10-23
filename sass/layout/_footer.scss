@@ -6,10 +6,11 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  background-color: abs.$dark-gray;
   
   &__title {
     font-size: 2.2em;
-    margin: 20px;
+    padding: 45px 20px 20px 20px;
     color: abs.$white;
     font-weight: 700;
   }
@@ -39,32 +40,33 @@
       padding: 12px 0; // Solo padding vertical para centrado del texto
       border: none; // Elimina todos los bordes
       border-bottom: 2px solid abs.$gray; // Línea inferior
-      background-color: abs.$black;
+      background-color: abs.$dark-gray;
       color: abs.$gray;
       font-family: abs.$primary-font;
       font-size: 1em;
       box-sizing: border-box;
-
+      
       &::placeholder {
         color: abs.$gray; // Color del placeholder
         font-weight: 700; // Negrita para simular el efecto de las etiquetas
         opacity: 1; // Asegura que el placeholder sea completamente visible
       }
-
+      
       &:focus {
         outline: none;
         border-bottom-color: abs.$ligth-green; 
         box-shadow: 0 2px 5px abs.$ligth-green; 
       }
     }
-
+    
     .footer__textarea {
       height: 120px;
       resize: vertical;
     }
-
+    
     // Alineación del botón a la derecha
     .footer__submit {
+      background-color: abs.$dark-gray;
       align-self: flex-end; // Alinea el botón a la derecha
       margin-top: 20px; // Espacio arriba del botón
     }
