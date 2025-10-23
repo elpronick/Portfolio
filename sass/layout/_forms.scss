@@ -1,1 +1,9 @@
 @use '../abstracts/index' as abs;
+
+.separator {
+  width: 100%;
+  height: 1px; // Línea fina
+  background-color: abs.$white; // Color blanco
+  border: none; // Elimina bordes por defecto de hr
+  margin: auto 0 40px auto; // Espacio arriba y abajo
+}

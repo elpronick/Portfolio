@@ -19,6 +19,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     width: 100%; // Ocupa todo el contenedor
+    margin-bottom: 40px;
   }
 
   &__item-title {

@@ -79,12 +79,4 @@
     justify-content: center;
     gap: 25px;
   }
-
-  .footer-separator {
-    width: 100%;
-    height: 1px; // Línea fina
-    background-color: abs.$white; // Color blanco
-    border: none; // Elimina bordes por defecto de hr
-    margin: 20px 0 40px 0; // Espacio arriba y abajo
-  }
 }
