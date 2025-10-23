@@ -142,13 +142,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px 100px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 40px;
   background-color: #151515;
   position: relative;
-  margin-bottom: 60px;
 }
 .skills::before {
   content: "";
@@ -159,10 +157,9 @@
   height: 100%;
   background-image: url(/img/Ovals.svg);
   background-repeat: no-repeat;
-  background-position: right 100% bottom;
+  background-position: right 100% bottom 8%;
   background-size: 50% 23%;
   transform: scaleX(-1);
-  padding-bottom: 60px;
 }
 .skills__list {
   list-style: none;

@@ -7,13 +7,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px 100px 20px; // Aumentamos padding-bottom a 100px para dar más espacio
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 40px;
   background-color: abs.$black; // Fondo consistente
   position: relative; // Necesario para posicionar el pseudo-elemento
-  margin-bottom: 60px;
 
   &::before {
     content: "";
@@ -24,11 +22,10 @@
     height: 100%;
     background-image: url(/img/Ovals.svg);
     background-repeat: no-repeat;
-    background-position: right 100% bottom;
+    background-position: right 100% bottom 8%; // Ajustamos la posición hacia arriba 60px
     background-size: 50% 23%;
     -webkit-transform: scaleX(-1); // Para compatibilidad con WebKit
     transform: scaleX(-1); // Voltea la imagen horizontalmente
-    padding-bottom: 60px;
   }
 
   &__list {
