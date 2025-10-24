@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    width: 100%; // Ocupa todo el contenedor
+    width: 65%; // Ocupa todo el contenedor
     margin-bottom: 40px;
     position: relative; // Asegura que el contenido esté sobre el pseudo-elemento
   }
