@@ -25,7 +25,7 @@
   bottom: -4px;
   transform: translateX(-50%);
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #4EE1A0;
   transition: width 0.3s ease, background-color 0.3s ease;
 }
@@ -244,6 +244,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  padding-bottom: 8px;
 }
 .button-1::after {
   content: "";
@@ -276,6 +277,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  padding-bottom: 8px;
 }
 .footer__submit::after {
   content: "";
