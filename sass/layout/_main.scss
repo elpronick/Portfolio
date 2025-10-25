@@ -110,3 +110,23 @@
     }
   }
 }
+
+// ====================  TABLET  ====================
+
+@include abs.breakpoint(tablet) {
+  .skills {
+    justify-content: flex-start; // Alinea el contenido a la izquierda
+    align-items: flex-start; // Alinea los ítems a la izquierda
+
+    &__list {
+      text-align: left;
+      width: 65%; // Ocupa todo el ancho disponible
+      margin-left: 0; // Elimina cualquier margen izquierdo
+      align-self: flex-start; // Fuerza la alineación a la izquierda en flex
+    }
+  }
+
+  .separator:last-child {
+    display: none;
+  }
+}

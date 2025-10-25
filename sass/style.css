@@ -92,7 +92,7 @@
     gap: 20px;
   }
   .header__nav__profile {
-    width: 400px;
+    width: 550px;
     padding-top: 50px;
     margin-bottom: 0px;
     background-image: linear-gradient(to top, #242424 0%, rgba(0, 0, 0, 0) 100%);
@@ -187,6 +187,20 @@
   background-size: 50% 23%;
 }
 
+@media (min-width: 768px) {
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 1821px;
+    left: -121px;
+    width: 70%;
+    height: 100%;
+    background-image: url(/img/Ovals.svg);
+    background-repeat: no-repeat;
+    background-position: right 100% bottom 8%;
+    background-size: 50% 23%;
+  }
+}
 .separator {
   width: 100%;
   height: 1px;
@@ -292,6 +306,21 @@
   justify-content: start;
 }
 
+@media (min-width: 768px) {
+  .skills {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .skills__list {
+    text-align: left;
+    width: 65%;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  .separator:last-child {
+    display: none;
+  }
+}
 .button-1 {
   display: inline-block;
   position: relative;
