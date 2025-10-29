@@ -130,3 +130,121 @@
     display: none;
   }
 }
+
+// ====================  DESKTOP  ====================
+
+@include abs.breakpoint(desktop) {
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 10% 100px 10%; // Aumentamos padding-bottom a 100px para dar más espacio
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: abs.$black; // Fondo consistente
+  position: relative; // Necesario para posicionar el pseudo-elemento
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/Ovals.svg);
+    background-repeat: no-repeat;
+    background-position: right 130% bottom 8%; // Ajustamos la posición hacia arriba 60px
+    background-size: 50% 23%;
+    -webkit-transform: scaleX(-1); // Para compatibilidad con WebKit
+    transform: scaleX(-1); // Voltea la imagen horizontalmente
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    width: 68%; // Ocupa todo el contenedor
+    margin-bottom: 40px;
+    position: relative; // Asegura que el contenido esté sobre el pseudo-elemento
+  }
+
+  &__item-title {
+    font-size: 2.1em;
+    font-weight: 700;
+  }
+
+  &__item-experience {
+    margin-top: 0;
+    font-size: 1em;
+  }
+}
+
+.project {
+  padding: 0 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  padding: 0 8.5%;
+  
+  
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 1.6%;
+    
+    &__title {
+      font-size: 2.6em;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+    }
+  }
+  
+  .project-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
+    justify-content: center;
+
+    .portfolio-item {
+      padding: 20px;
+      text-align: center;
+
+      &__image {
+        width: 343px; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      &__title {
+        font-size: 1.5em;
+        margin: 0 0 8px 0;
+        font-weight: 700;
+        text-align: start;
+      }
+
+      .tech-stack {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        margin-bottom: 20px;
+
+        &__item {
+          font-size: 1em;
+          padding: 5px 0;
+        }
+      }
+
+      .portfolio-actions {
+        display: flex;
+        gap: 25px;
+        justify-content: start;
+      }
+    }
+  }
+}
+}

@@ -369,6 +369,106 @@
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10% 100px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #151515;
+    position: relative;
+  }
+  .skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/Ovals.svg);
+    background-repeat: no-repeat;
+    background-position: right 130% bottom 8%;
+    background-size: 50% 23%;
+    transform: scaleX(-1);
+  }
+  .skills__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    width: 68%;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .skills__item-title {
+    font-size: 2.1em;
+    font-weight: 700;
+  }
+  .skills__item-experience {
+    margin-top: 0;
+    font-size: 1em;
+  }
+  .project {
+    padding: 0 20px 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 8.5%;
+  }
+  .project .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 1.6%;
+  }
+  .project .project-header__title {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+  }
+  .project .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center;
+  }
+  .project .project-list .portfolio-item {
+    padding: 20px;
+    text-align: center;
+  }
+  .project .project-list .portfolio-item__image {
+    width: 343px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .project .project-list .portfolio-item__title {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    text-align: start;
+  }
+  .project .project-list .portfolio-item .tech-stack {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  .project .project-list .portfolio-item .tech-stack__item {
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  .project .project-list .portfolio-item .portfolio-actions {
+    display: flex;
+    gap: 25px;
+    justify-content: start;
+  }
+}
 .button-1 {
   display: inline-block;
   position: relative;
