@@ -133,16 +133,20 @@
   </main>
 
   <footer class="footer">
-    <h2 class="footer__title">Contact</h2>
-    <p class="footer__description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
-    <form class="footer__form" id="contact-form">
-      <div class="form-fields">
-        <input type="text" id="name" name="name" class="footer__input" placeholder="NAME" required>
-        <input type="email" id="email" name="email" class="footer__input" placeholder="EMAIL" required>
-        <textarea id="message" name="message" class="footer__textarea" placeholder="MESSAGE" required></textarea>
-      </div>
-      <button type="submit" aria-label="Enviar mensaje" class="footer__submit">SEND MESSAGE</button>
-    </form>
+    <div class="left">
+      <h2 class="footer__title">Contact</h2>
+      <p class="footer__description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+    </div>
+    <div class="right">
+      <form class="footer__form" id="contact-form">
+        <div class="form-fields">
+          <input type="text" id="name" name="name" class="footer__input" placeholder="NAME" required>
+          <input type="email" id="email" name="email" class="footer__input" placeholder="EMAIL" required>
+          <textarea id="message" name="message" class="footer__textarea" placeholder="MESSAGE" required></textarea>
+        </div>
+        <button type="submit" aria-label="Enviar mensaje" class="footer__submit">SEND MESSAGE</button>
+      </form>
+    </div>
     <div class="separator"></div>
     <nav class="footer__nav">
       <img src="img/adamkeyes.svg" alt="Logo" class="footer__logo">
