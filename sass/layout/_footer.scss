@@ -120,9 +120,14 @@
   .footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 60% 20% 20%);
+    grid-template-rows: 1fr auto auto;
     padding-top: 50px;
-    
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: none; // Elimina el límite de ancho
+
     .separator {
       grid-column: 1 / span 2;
       grid-row: 2 / 3;
